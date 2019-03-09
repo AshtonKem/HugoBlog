@@ -62,11 +62,6 @@ weight = 1
 url = "https://countersteer.co"
 
 [[menu.main]]
-name = "Consulting"
-weight = 1
-url = "/consulting/"
-
-[[menu.main]]
 name = "Resume"
 weight = 1
 url = "/resume/"
