@@ -2,3 +2,28 @@ baseURL = "http://ashtonkemerling.com/"
 languageCode = "en-us"
 title = "Ashton Kemerling"
 theme = "coder"
+
+[[menu.main]]
+name = "About"
+weight = 1
+url = "/about/"
+
+[[menu.main]]
+name = "Blog"
+weight = 1
+url = "/blog/"
+
+[[menu.main]]
+name = "Podcast"
+weight = 1
+url = "https://countersteer.co"
+
+[[menu.main]]
+name = "Consulting"
+weight = 1
+url = "/consulting/"
+
+[[menu.main]]
+name = "Resume"
+weight = 1
+url = "/resume/"
