@@ -29,7 +29,7 @@ The one exception to this I have found is Clojure. Clojure inverts the
 normal order making the build tool the central item, with the compiler
 provided by the project definition file.
 
-``` clojure
+{{< highlight clojure >}}
 (defproject foo "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -38,7 +38,8 @@ provided by the project definition file.
                  [org.clojure/clojure-contrib "1.2.0"]
                  [clj-time "0.6.0"]]
   :profiles {:dev {:dependencies [[midje "1.5.1"]]}})
-```
+{{< /highlight >}}
+
 
 
 The beauty of this change is that it makes setup trivial for another
@@ -55,10 +56,11 @@ profiles which allow you to swap out compilers trivially because it's
 just a dependency.
 
 
-``` clojure
+{{< highlight clojure >}}
 :profiles {:1.3 {:dependencies [[org.clojure/clojure "1.3.0"]]}
            :1.4 {:dependencies [[org.clojure/clojure "1.4.0-beta1"]]}}
-```
+{{< /highlight >}}
+
 
 Deployment gets easier as well. If you're deploying an uberjar, the core
 libraries you tested against are also shipped to production in the same

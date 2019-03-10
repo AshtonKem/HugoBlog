@@ -1,39 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54e15e25-23e4-49dd-9942-20c59259d6f1" name="Default Changelist" comment="Migrate (most) of my blog content.">
-      <change afterPath="$PROJECT_DIR$/content/posts/a-new-addiction.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/advanced-existential-dread.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/binding-vs-assignment.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/false-novelty.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/fast-cheap-good.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/hands-and-feet.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/internationalization-golf.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/introducing-butler-dot-el.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/java-doesnt-deserve-half-the-shit-we-give-it.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/java-without-if.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/learn-what-you-dont-like.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/managing-is-a-craft-too.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/mdc-and-threadpools.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/moving-to-denver.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/my-increasing-frustration-with-clojure.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/no-you-probably-dont-need-a-blockchain.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/octopress.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/org-mode.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/reaction-to-kill-your-heroes-and-comments.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/right-vs-useful.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/size-matters.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/stealing-terminology.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/stop-surprising-me-ubuntu.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/the-best-of-lisp.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/the-dangers-of-partisanship.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/the-myth-of-the-lone-hacker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/thoughts-on-rubymine.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/time-attention-and-pairing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/unusual-productivity-hacks.md" afterDir="false" />
+    <list default="true" id="54e15e25-23e4-49dd-9942-20c59259d6f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/binding-vs-assignment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/binding-vs-assignment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/java-without-if.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/java-without-if.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/mdc-and-threadpools.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/mdc-and-threadpools.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +52,81 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts/hands-and-feet.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="224">
                 <caret line="10" column="178" lean-forward="true" selection-start-line="10" selection-start-column="178" selection-end-line="10" selection-end-column="178" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/posts/java-without-if.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="72">
+                <caret line="105" column="58" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.toml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="323">
+                <caret line="296" column="45" selection-start-line="296" selection-start-column="45" selection-end-line="296" selection-end-column="45" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="323">
+                <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/posts/mdc-and-threadpools.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/posts/binding-vs-assignment.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="470">
+                <caret line="38" column="6" selection-start-line="38" selection-end-line="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -95,6 +139,8 @@
     <findStrings>
       <find>googleA</find>
       <find>^slug = &quot;(.*)&quot;$</find>
+      <find>pygmentsUseClasses</find>
+      <find>```</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -112,7 +158,6 @@
         <option value="$PROJECT_DIR$/content/resume.md" />
         <option value="$PROJECT_DIR$/content/about.md" />
         <option value="$PROJECT_DIR$/layouts/_default/baseof.html" />
-        <option value="$PROJECT_DIR$/config.toml" />
         <option value="$PROJECT_DIR$/content/posts/myth-of-the-lone-hacker.md" />
         <option value="$PROJECT_DIR$/content/posts/unusual-productivity-hacks.markdown" />
         <option value="$PROJECT_DIR$/content/posts/thoughts-on-rubymine.markdown" />
@@ -144,9 +189,14 @@
         <option value="$PROJECT_DIR$/content/posts/2012-12-10-learn-what-you-dont-like.markdown" />
         <option value="$PROJECT_DIR$/content/posts/hands-and-feet.markdown" />
         <option value="$PROJECT_DIR$/content/posts/a-new-addiction.markdown" />
-        <option value="$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md" />
         <option value="$PROJECT_DIR$/content/posts/learn-what-you-dont-like.md" />
         <option value="$PROJECT_DIR$/content/posts/fast-cheap-good.md" />
+        <option value="$PROJECT_DIR$/content/posts/java-without-if.md" />
+        <option value="$PROJECT_DIR$/config.toml" />
+        <option value="$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md" />
+        <option value="$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md" />
+        <option value="$PROJECT_DIR$/content/posts/mdc-and-threadpools.md" />
+        <option value="$PROJECT_DIR$/content/posts/binding-vs-assignment.md" />
       </list>
     </option>
   </component>
@@ -177,6 +227,12 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -193,7 +249,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552176025299" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552177579674" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -217,7 +273,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552167832502</updated>
-      <workItem from="1552167833689" duration="4405000" />
+      <workItem from="1552167833689" duration="5679000" />
     </task>
     <task id="LOCAL-00001" summary="Images, favicon, and google analytics.">
       <created>1552174088181</created>
@@ -233,41 +289,50 @@
       <option name="project" value="LOCAL" />
       <updated>1552174152777</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Migrate (most) of my blog content.">
+      <created>1552176034012</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552176034012</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4405000" />
+    <option name="totallyTimeSpent" value="5679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
       <window_info id="Designer" />
-      <window_info id="UI Designer" />
+      <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Mongo Explorer" />
       <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -283,33 +348,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Migrate (most) of my blog content." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/resume.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="224">
-            <caret line="11" column="382" selection-start-line="11" selection-start-column="382" selection-end-line="11" selection-end-column="382" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/about.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="112">
-            <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/_default/baseof.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/false-novelty.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -327,13 +365,6 @@
             <caret line="11" column="154" lean-forward="true" selection-start-line="11" selection-start-column="154" selection-end-line="11" selection-end-column="154" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -645,16 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="336">
-            <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/my-increasing-frustration-with-clojure.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -696,14 +717,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/unusual-productivity-hacks.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -760,6 +773,63 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="224">
             <caret line="10" column="178" lean-forward="true" selection-start-line="10" selection-start-column="178" selection-end-line="10" selection-end-column="178" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/java-without-if.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="72">
+            <caret line="105" column="58" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/integrating-test-dot-check-and-javascript.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="296" column="45" selection-start-line="296" selection-start-column="45" selection-end-line="296" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/the-primacy-of-the-build-tool.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/mdc-and-threadpools.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/binding-vs-assignment.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="470">
+            <caret line="38" column="6" selection-start-line="38" selection-end-line="39" />
           </first_editor>
           <second_editor />
         </state>

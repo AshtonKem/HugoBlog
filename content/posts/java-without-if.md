@@ -47,7 +47,7 @@ right side values representing success.
 
 So, what does that buy us? Well, consider what Optional gets us in the following code snippets.
 
-```java
+{{< highlight java >}}
 String x = Helper.functionOne();
 if (x != null) {
   x = Helper.functionTwo(x);
@@ -56,14 +56,14 @@ if (x != null) {
     ...
   }
 }
-```
+{{< /highlight >}}
 
-```java
+{{< highlight java >}}
 Optional<String> x = Helper.functionOne()
                            .map(Helper::functionTwo)
                            .flatMap(Helper::functionThree);
+{{< /highlight >}}
 
-```
 
 Optional gives us the ability to say "if a value exists, apply this function to
 it" repeatedly. It also gives us the ability to chain successive calls that
@@ -110,7 +110,7 @@ value.
 As a result of all this, you can easily imagine a JSON API endpoint looking
 something like this:
 
-``` java
+{{< highlight java >}}
 public HttpResponse handle(HttpRequest request) {
     return JsonParser.parse(request.getBody())
                      .flatMap(Validator::validate)
@@ -119,7 +119,8 @@ public HttpResponse handle(HttpRequest request) {
                      .match(l -> HttpResponse.internalServerError(l.getMessage()),
                             r -> HttpResponse.ok(l));
 }
-```
+{{< /highlight >}}
+
 
 All the potential failure cases are covered by returning an Either rather than
 throwing an exception. The very last step is ```match```, which takes two

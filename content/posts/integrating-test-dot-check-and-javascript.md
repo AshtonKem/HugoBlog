@@ -70,7 +70,7 @@ reproduced at the bottom of this post if you have issues.
 
 At this point, we can write the simplest test possible:
 
-```clojure
+{{< highlight clojure >}}
 (ns tracker-cljs.simple-test
   (:require [clojure.test.check :as core]
             [clojure.test.check.generators :as gen]
@@ -84,7 +84,7 @@ At this point, we can write the simplest test possible:
   (for-all [v (gen/such-that gen/not-empty (gen/vector gen/int))]
     (println v)
     true))
-```   
+{{< /highlight >}}   
 
 
 # PhantomJS issues.
@@ -92,18 +92,17 @@ At this point, we can write the simplest test possible:
 In order to run the tests, you would typically have a :tests section in
 :cljsbuild that looks like this:
 
-```clojure
+{{< highlight clojure >}}
 :test-commands {"unit-tests" ["phantomjs" :runner
                                           "compiled-application.js"
                                           "tmp/compiled-tests.js"]}
-```
+{{< /highlight >}}
+
 
 This will load our JS into the app, along with the tests, and then run
 them. But you might notice errors that look like this:
 
-```
-SECURITY_ERR: DOM Exception 18: An attempt was made to break through the security policy of the user agent.
-```
+`SECURITY_ERR: DOM Exception 18: An attempt was made to break through the security policy of the user agent.`
 
 That means that your app code is trying to access local storage, and
 PhantomJS does not like it when you do that without loading a 
@@ -113,7 +112,7 @@ two bits of code.
 
 generative_runner.js, to visit the actual page:
 
-```
+{{< highlight javascript >}}
 // reusable PhantomJS script for running clojurescript.test tests
 // see http://github.com/cemerick/clojurescript.test for more info
 
@@ -159,7 +158,8 @@ page.open('http://localhost:4500', function(status) {
     });
     phantom.exit(success ? 0 : 1);
 });
-```
+{{< /highlight >}}
+
   
   
 And a rake task to stand up a server and run everything. If you don't
@@ -168,7 +168,7 @@ commands to compile, but the intention remains. The WEBrick server
 provides a blank page for us to visit and run our tests on, which
 prevents PhantomJS from raising security errors.
 
-```
+{{< highlight ruby >}}
 require 'fileutils'
 require 'webrick'
 
@@ -191,7 +191,8 @@ namespace :test do
     exit exitCode
   end
 end
-```
+{{< /highlight >}}
+
 
 To make all this work together, update project.clj to reference the
 generative_runner.js file instead of :runner, and use ```rake
@@ -231,7 +232,7 @@ Once you have that going, it should be possible to open up and create
 increasingly complicated tests. As a teaser and a good example, the
 following code caught a tricky JS ordering bug.
 
-```
+{{< highlight clojure >}}
 (ns tracker-cljs.panel-items-test
   (:require [clojure.test.check :as core]
             [clojure.test.check.generators :as gen]
@@ -262,13 +263,13 @@ following code caught a tricky JS ordering bug.
              (.refresh subject (apply array (sort-by #(.get % :id) models)))
              (is (= sorted
                     (ids subject))))))
-```
+{{< /highlight >}}
 
 
 And the following is our project.clj, with unnecessary details elided
 for readability.
 
-```
+{{< highlight clojure >}}
 (defproject generative-testing "0.0.1-SNAPSHOT"
   :plugins [[lein-cljsbuild "1.0.3"]
             [com.cemerick/clojurescript.test "0.2.2"]]
@@ -284,13 +285,13 @@ for readability.
               :test-commands {"unit-tests" ["phantomjs" "lib/generative_runner.js"
                                             "public/next/assets/next/next.js"
                                             "tmp/tracker-cljs.js"]}})
-```
+{{< /highlight >}}
 
 Also, the following function is helpful for converting from Cljs data
 structures to pure Javascript ones. It causes some compiler warnings,
 but they appear to be harmless.
 
-```
+{{< highlight clojure >}}
 (defn clj->js
   "Recursively transforms ClojureScript maps into Javascript objects,
    other ClojureScript colls into JavaScript arrays, and ClojureScript
@@ -302,7 +303,8 @@ but they appear to be harmless.
     (map? x) (apply js-obj (flatten (map (fn [[key val]] [(clj->js key) (clj->js val)]) x)))
     (coll? x) (apply array (map clj->js x))
     :else x))
-```
+{{< /highlight >}}
+
 
 Good luck, and don't hesitate to reach out to me on Twitter if you have
 any questions!

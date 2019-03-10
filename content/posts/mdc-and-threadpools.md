@@ -15,7 +15,7 @@ Except, that's not really how Java programming works these days. Threads are exp
 
 So, what happens to our MDC when we reuse threads? Well, we end up with the wrong MDC! Here's some code for Java 8 that shows the problem:
 
-``` java
+{{< highlight java >}}
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -59,7 +59,8 @@ public class Main {
         doAll("correlation-id-two");
     }
 }
-```
+{{< /highlight >}}
+
 
 This code is using the new `CompletableFuture` class from Java 8, which is *roughly* analogous to Javascript promises. What we do is set the correlation-id, then execute a sequence of asynchronous actions and log the output. If you run this code enough times, you will eventually get the output below:
 

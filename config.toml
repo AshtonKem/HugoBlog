@@ -45,7 +45,6 @@ googleAnalytics = "UA-32325955-1"
     weight = 4
     url = "https://www.linkedin.com/in/ashton-kemerling/"
 
-
 [[menu.main]]
 name = "About"
 weight = 1
