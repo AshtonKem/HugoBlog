@@ -1,5 +1,5 @@
 +++
-title = "unusual productivity hacks"
+title = "Unusual Productivity Hacks"
 date = "2014-06-19"
 aliases = ["/blog/2014/06/19/unusual-productivity-hacks"]
 Categories = []

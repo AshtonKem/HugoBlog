@@ -1,5 +1,5 @@
 +++
-title = "the best of lisp"
+title = "The Best of Lisp"
 date = "2013-11-01"
 aliases = ["/blog/2013/11/01/the-best-of-lisp"]
 Categories = []

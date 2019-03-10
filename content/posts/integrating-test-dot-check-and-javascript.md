@@ -1,5 +1,5 @@
 +++
-title = "integrating test dot check and javascript"
+title = "Integrating test.check and Javascript"
 date = "2014-09-25"
 aliases = ["/blog/2014/09/25/integrating-test-dot-check-and-javascript"]
 Categories = []

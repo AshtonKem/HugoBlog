@@ -1,5 +1,5 @@
 +++
-title = "advanced existential dread"
+title = "Advanced Existential Dread"
 date = "2013-10-30"
 aliases = ["/blog/2013/10/30/advanced-existential-dread"]
 Categories = []

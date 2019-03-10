@@ -1,5 +1,5 @@
 +++
-title = "time attention and pairing"
+title = "Time, Attention, and Pairing"
 date = "2013-10-26"
 aliases = ["/blog/2013/10/26/time-attention-and-pairing"]
 Categories = []

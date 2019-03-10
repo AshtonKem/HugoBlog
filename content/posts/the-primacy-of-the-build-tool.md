@@ -1,5 +1,5 @@
 +++
-title = "the primacy of the build tool"
+title = "The Primacy of the Build Tool"
 date = "2014-03-31"
 aliases = ["/blog/2014/03/31/the-primacy-of-the-build-tool"]
 Categories = []

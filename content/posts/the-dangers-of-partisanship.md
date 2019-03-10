@@ -1,5 +1,5 @@
 +++
-title = "the dangers of partisanship"
+title = "The Dangers of Partisanship"
 date = "2013-07-15"
 aliases = ["/blog/2013/07/15/the-dangers-of-partisanship"]
 Categories = []

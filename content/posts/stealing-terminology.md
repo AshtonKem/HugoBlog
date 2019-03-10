@@ -1,5 +1,5 @@
 +++
-title = "stealing terminology"
+title = "Stealing Terminology"
 date = "2013-07-02"
 aliases = ["/blog/2013/07/02/stealing-terminology"]
 Categories = []

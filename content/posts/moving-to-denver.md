@@ -1,5 +1,5 @@
 +++
-title = "moving to denver"
+title = "Moving to Denver"
 date = "2013-10-25"
 aliases = ["/blog/2013/10/25/moving-to-denver"]
 Categories = []

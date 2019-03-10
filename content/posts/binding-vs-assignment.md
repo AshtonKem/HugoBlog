@@ -1,5 +1,5 @@
 +++
-title = "binding vs assignment"
+title = "Binding vs Assignment"
 date = "2013-04-30"
 aliases = ["/blog/2013/04/30/binding-vs-assignment"]
 Categories = []

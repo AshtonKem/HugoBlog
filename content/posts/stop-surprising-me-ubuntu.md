@@ -1,5 +1,5 @@
 +++
-title = "stop surprising me ubuntu"
+title = "Stop Surprising Me Ubuntu"
 date = "2013-06-04"
 aliases = ["/blog/2013/06/04/stop-surprising-me-ubuntu"]
 Categories = []

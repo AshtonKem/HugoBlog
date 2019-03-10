@@ -1,5 +1,5 @@
 +++
-title = "internationalization golf"
+title = "Internationalization Golf"
 date = "2014-01-06"
 aliases = ["/blog/2014/01/06/internationalization-golf"]
 Categories = []

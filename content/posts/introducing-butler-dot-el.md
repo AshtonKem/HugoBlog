@@ -1,5 +1,5 @@
 +++
-title = "introducing butler dot el"
+title = "Introducing Butler.el"
 date = "2013-05-03"
 aliases = ["/blog/2013/05/03/introducing-butler-dot-el"]
 Categories = []

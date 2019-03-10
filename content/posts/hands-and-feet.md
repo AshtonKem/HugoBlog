@@ -1,5 +1,5 @@
 +++
-title = "hands and feet"
+title = "Hands and Feet"
 date = "2012-12-01"
 aliases = ["/blog/2012/12/01/hands-and-feet"]
 Categories = []

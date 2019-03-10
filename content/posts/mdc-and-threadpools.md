@@ -1,5 +1,5 @@
 +++
-title = "mdc and threadpools"
+title = "MDC and Threadpools"
 date = "2017-09-01"
 aliases = ["/blog/2017/09/01/mdc-and-threadpools"]
 Categories = []

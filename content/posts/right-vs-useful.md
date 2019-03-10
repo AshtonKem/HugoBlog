@@ -1,5 +1,5 @@
 +++
-title = "right vs useful"
+title = "Right vs Useful"
 date = "2013-01-03"
 aliases = ["/blog/2013/01/03/right-vs-useful"]
 Categories = []

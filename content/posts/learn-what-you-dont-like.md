@@ -1,5 +1,5 @@
 +++
-title = "learn what you dont like"
+title = "Learn What You Don't Like"
 date = "2012-12-10"
 aliases = ["/blog/2012/12/10/learn-what-you-dont-like"]
 Categories = []

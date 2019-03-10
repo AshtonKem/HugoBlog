@@ -1,5 +1,5 @@
 +++
-title = "managing is a craft too"
+title = "Managing is a Craft Too"
 date = "2014-01-14"
 aliases = ["/blog/2014/01/14/managing-is-a-craft-too"]
 Categories = []

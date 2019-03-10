@@ -1,5 +1,5 @@
 +++
-title = "the myth of the lone hacker"
+title = "The Myth of the Lone Hacker"
 date = "2012-11-22"
 aliases = ["/blog/2012/11/22/the-myth-of-the-lone-hacker"]
 Categories = []

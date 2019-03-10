@@ -1,5 +1,5 @@
 +++
-title = "false novelty"
+title = "False Novelty"
 date = "2018-12-19"
 aliases = ["/blog/2018/12/19/false-novelty"]
 Categories = []

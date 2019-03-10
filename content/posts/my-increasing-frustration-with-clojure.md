@@ -1,5 +1,5 @@
 +++
-title = "my increasing frustration with clojure"
+title = "My Increasing Frustration With Clojure"
 date = "2016-06-11"
 aliases = ["/blog/2016/06/11/my-increasing-frustration-with-clojure"]
 Categories = []

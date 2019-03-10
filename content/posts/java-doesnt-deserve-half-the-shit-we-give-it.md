@@ -1,5 +1,5 @@
 +++
-title = "java doesnt deserve half the shit we give it"
+title = "Java Doesn't Deserve Half the Shit We Give It"
 date = "2013-01-22"
 aliases = ["/blog/2013/01/22/java-doesnt-deserve-half-the-shit-we-give-it"]
 Categories = []

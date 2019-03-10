@@ -1,5 +1,5 @@
 +++
-title = "reaction to kill your heroes and comments"
+title = "Reaction to Kill Your Heroes and Comments"
 date = "2012-11-29"
 aliases = ["/blog/2012/11/29/reaction-to-kill-your-heroes-and-comments"]
 Categories = []

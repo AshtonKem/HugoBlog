@@ -1,5 +1,5 @@
 +++
-title = "size matters"
+title = "Size Matters"
 date = "2013-04-23"
 aliases = ["/blog/2013/04/23/size-matters"]
 Categories = []

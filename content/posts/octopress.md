@@ -1,5 +1,5 @@
 +++
-title = "octopress"
+title = "Octopress"
 date = "2013-04-22"
 aliases = ["/blog/2013/04/22/octopress"]
 Categories = []

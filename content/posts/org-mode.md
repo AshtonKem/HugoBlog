@@ -1,5 +1,5 @@
 +++
-title = "org mode"
+title = "Org Mode"
 date = "2013-11-04"
 aliases = ["/blog/2013/11/04/org-mode"]
 Categories = []

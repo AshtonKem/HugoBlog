@@ -1,5 +1,5 @@
 +++
-title = "no you probably dont need a blockchain"
+title = "No You Probably Don't Need a Blockchain"
 date = "2018-02-21"
 aliases = ["/blog/2018/02/21/no-you-probably-dont-need-a-blockchain"]
 Categories = []

@@ -1,5 +1,5 @@
 +++
-title = "thoughts on rubymine"
+title = "Thoughts on Rubymine"
 date = "2013-12-20"
 aliases = ["/blog/2013/12/20/thoughts-on-rubymine"]
 Categories = []

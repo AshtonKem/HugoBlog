@@ -1,5 +1,5 @@
 +++
-title = "java without if"
+title = "Java Without If"
 date = "2017-01-26"
 aliases = ["/blog/2017/01/26/java-without-if"]
 Categories = []
