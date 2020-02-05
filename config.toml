@@ -1,7 +1,7 @@
 baseURL = "http://ashtonkemerling.com/"
 languageCode = "en-us"
 title = "Ashton Kemerling"
-theme = "coder"
+theme = "hugo-notepadium"
 googleAnalytics = "UA-32325955-1"
 enableGitInfo = true
 
@@ -20,6 +20,8 @@ enableGitInfo = true
 
     # Git Commit in Footer, uncomment the line below to enable it.
     # commit = "https://github.com/luizdepra/hugo-coder/tree/"
+
+    featured_image = "/images/scott-trento-mUFFI4CkmAI-unsplash.jpg"
 
     # Use inverted colors
     inverted = false
@@ -46,17 +48,10 @@ enableGitInfo = true
     weight = 4
     url = "https://www.linkedin.com/in/ashton-kemerling/"
 
-[[menu.main]]
-name = "About"
-weight = 1
+[[params.nav.custom]]
+title = "About"
 url = "/about/"
 
-[[menu.main]]
-name = "Blog"
-weight = 1
-url = "/posts/"
-
-[[menu.main]]
-name = "Resume"
-weight = 1
+[[params.nav.custom]]
+title = "Resume"
 url = "/resume/"
