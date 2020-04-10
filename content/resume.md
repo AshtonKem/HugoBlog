@@ -7,6 +7,12 @@ draft: false
 
 # Experience
 
+## Hulu (2020 - Current)
+
+Hulu is the leading premium streaming service offering live and on-demand TV and movies, with and without commercials. Hulu is the only service that gives viewers instant access to current shows from every major U.S. broadcast network; libraries of hit TV series and films; and acclaimed Hulu Originals. Hulu also streams live news, entertainment and sports.
+
+At Hulu I lead the DVR team, which is responsible for powering the Cloud DVR feature for Hulu Live TV customers. 
+
 ## Edmunds (2017 - 2019)
 
 Edmunds.com is one of the world's premier car research and buying websites. First created in 1966, Edmunds' main goal has been making the car buying process easier for the consumer. Based out of beautiful Santa Monica California, Edmunds has consistently been rated one of the best places to work in LA. It also has an [amazing office](https://www.youtube.com/watch?v=1aq5T1GCyOA).
