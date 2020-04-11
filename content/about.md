@@ -7,7 +7,7 @@ draft: false
 
 Programmer, podcaster, fisherman, and nerd extraordinaire. By day I'm an engineer, and by night I'm a nerd, or is that redundant?
 
-At my day job I am a manager and engineer working for [Edmunds](https://www.edmunds.com) in beautiful Santa Monica California. By night I continue to code on the side and cohost [CounterSteer](https://www.countersteer.co), a car podcast.
+At my day job I am a manager and engineer working for [Hulu](https://www.hulu.com) in beautiful Santa Monica California.
 
 Professionally, my experience is all over the place. I've worked in old small companies, startups, Dell backed consultancies, and finance. In the mean time I've written code in Java, C\#, Ruby, Javascript, Clojure, Python, and even Common Lisp! And that's only counting the languages that I've been paid to write in.
 
