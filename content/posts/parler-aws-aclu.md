@@ -1,6 +1,6 @@
 ---
 title: Parler, AWS, and the ACLU
-date: 2021-01-11T01:00:00-07:00
+date: 2021-01-12T01:00:00-07:00
 ---
 
 # Parler, AWS, and the ACLU
