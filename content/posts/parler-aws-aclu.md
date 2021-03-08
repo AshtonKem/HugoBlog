@@ -19,7 +19,7 @@ Here are the best arguments I could think of for making AWS take Parler back and
 
 ## On Monopoly
 
-Typically the first argument here is that AWS controls so much of the market place that their ability to deny you access to their services is a death knell. The person making this argument will occasionally self consciously call AWS a monopaly. Once you do any research on the subject, you'll realize that not only is this not true, it's almost hilariously not true.
+Typically the first argument here is that AWS controls so much of the market place that their ability to deny you access to their services is a death knell. The person making this argument will occasionally self consciously call AWS a monopoly. Once you do any research on the subject, you'll realize that not only is this not true, it's almost hilariously not true.
 
 AWS has competitors, big ones. You can probably name two, and Oracle deeply wishes that you'd name three. Even if we just restrict ourselves to “the cloud”, you already have at least three or four options; more options than you have purchasing a cell phone in the US, both in terms of contract or ecosystem.
 
