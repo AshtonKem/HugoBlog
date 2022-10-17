@@ -7,7 +7,7 @@ draft: false
 
 Programmer, podcaster, fisherman, and nerd extraordinaire. By day I'm an engineer, and by night I'm a nerd, or is that redundant?
 
-At my day job I am a manager and engineer working for [Hulu](https://www.hulu.com) in beautiful Santa Monica California.
+At my day job I am a manager and engineer working for [Hulu](https://www.hulu.com) in Boise, Idaho.
 
 Professionally, my experience is all over the place. I've worked in old small companies, startups, Dell backed consultancies, and finance. In the mean time I've written code in Java, C\#, Ruby, Javascript, Clojure, Python, and even Common Lisp! And that's only counting the languages that I've been paid to write in.
 
