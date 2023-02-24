@@ -16,8 +16,8 @@
             version = "2023-02-23";
             src = ./.;
             nativeBuildInputs = [ pkgs.hugo ];
-            buildPhase = "";
-            installPhase = "";
+            buildPhase = "hugo";
+            installPhase = "cp -r public $out";
           };
           defaultPackage = self.packages.${system}.website;
           devShell = pkgs.mkShell {
