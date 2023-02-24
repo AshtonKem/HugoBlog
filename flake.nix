@@ -15,7 +15,7 @@
             pname = "static-website";
             version = "2023-02-23";
             src = ./.;
-            nativeBuildInputs = [ pkgs.hugo ];
+            nativeBuildInputs = [ pkgs.hugo pkgs.git ];
             buildPhase = "hugo";
             installPhase = "cp -r public $out";
           };
