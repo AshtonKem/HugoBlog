@@ -30,6 +30,22 @@
         "type": "github"
       }
     },
+    "hugo-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673714415,
+        "narHash": "sha256-jZShdRjn+823nMNCGZX405wpQrs+c4+lCBhtZnMVlPA=",
+        "owner": "cntrump",
+        "repo": "hugo-notepadium",
+        "rev": "0d32c38a51edb07bce45fec89b6f744fb1747cbd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cntrump",
+        "repo": "hugo-notepadium",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1659914493,
@@ -84,6 +100,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "hugo-theme": "hugo-theme",
         "nixpkgs": "nixpkgs",
         "resume": "resume"
       }

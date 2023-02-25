@@ -3,10 +3,14 @@
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixos-21.05;
     flake-utils.url = github:numtide/flake-utils;
+    hugo-theme = {
+      url = github:cntrump/hugo-notepadium;
+      flake = false;
+    };
     resume.url = github:AshtonKem/resume;
   };
 
-  outputs = { self, nixpkgs, flake-utils, resume }:
+  outputs = { self, nixpkgs, flake-utils, resume, hugo-theme }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
@@ -16,10 +20,27 @@
             pname = "static-website";
             version = "2023-02-23";
             src = ./.;
-            buildInputs = [ resume pkgs.hugo pkgs.git ];
-            buildPhase = "hugo";
-            installPhase = "cp -r public $out";
+            buildInputs = [ pkgs.hugo pkgs.git hugo-theme];
+            installThemeScript = ''
+              mkdir -p themes
+              ln -snf "${hugo-theme}" themes/hugo-notepadium
+            '';
+            configurePhase = installThemeScript;
+            buildPhase = ''
+              hugo
+            '';
+            installPhase = ''
+              cp -r public $out
+            '';
           };
+
+
+
+          packages.default = pkgs.writeScriptBin "hugoRun" ''
+            mkdir -p themes;
+            ln -snf "${hugo-theme}" themes/hugo-notepadium;
+          	hugo server;
+          '';
           defaultPackage = self.packages.${system}.website;
           devShell = pkgs.mkShell {
             packages = with pkgs; [
