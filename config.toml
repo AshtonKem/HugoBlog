@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Ashton Kemerling"
 theme = "hugo-notepadium"
 googleAnalytics = "UA-32325955-1"
-enableGitInfo = true
 
 [params]
     author = "Ashton Kemerling"

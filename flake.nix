@@ -20,7 +20,7 @@
             pname = "static-website";
             version = "2023-02-23";
             src = ./.;
-            buildInputs = [ pkgs.hugo pkgs.git hugo-theme];
+            buildInputs = [ pkgs.hugo hugo-theme];
             installThemeScript = ''
               mkdir -p themes
               ln -snf "${hugo-theme}" themes/hugo-notepadium
@@ -36,16 +36,15 @@
 
 
 
-          packages.default = pkgs.writeScriptBin "hugoRun" ''
-            mkdir -p themes;
-            ln -snf "${hugo-theme}" themes/hugo-notepadium;
-          	hugo server;
-          '';
           defaultPackage = self.packages.${system}.website;
           devShell = pkgs.mkShell {
             packages = with pkgs; [
               hugo
             ];
+            shellHook = ''
+              mkdir -p themes
+              ln -snf "${hugo-theme}" themes/hugo-notepadium
+            '';
           };
         }
     );
