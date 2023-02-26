@@ -4,7 +4,7 @@ date = "2023-02-25"
 Categories = []
 +++
 
-I recently read an [article](https://twi.github.io/blog/making-go-telemetry-opt-in-is-a-mistake.html) about Go opt in tracking being a mistake. The author was very earnest about the pros of compiler tool chain telemetry, how it was very common among Google and Go's competitors, and how opt in tracking would skew the data set. Their general argument was that anonymized telemetry is extremely useful for compiler writers, and that shifting Go to opt in rather than opt out doesn't harm user safety and reduces the ability of the Go team to correctly steer their important project
+I recently read an [article](https://twi.github.io/blog/making-go-telemetry-opt-in-is-a-mistake.html) about Go opt in tracking being a mistake. The author was very earnest about the pros of compiler tool chain telemetry, how it was very common among Google and Go's competitors, and how opt in tracking would skew the data set. Their general argument was that anonymized telemetry is extremely useful for compiler writers, and that shifting Go to opt in rather than opt out doesn't help user safety and reduces the ability of the Go team to correctly steer their important project
 
 Reading the article I was struck by a feeling of "I'm confused 
 why you're confused"[^confused]. The author made a ton of great points, but to me they missed the main problem completely. The issue never was telemetry, the issue was Google[^go]. Very few people trust Google anymore, and therefore the problem was that the telemetry suggestion came from Google. Focusing on the pros and potential safety rails of an open telemetry system is not wrong per se, it's just completely orthogonal to what got everyone worked up in the first place.
