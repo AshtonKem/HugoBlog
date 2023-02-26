@@ -35,6 +35,20 @@
           };
 
 
+          apps.server = {
+            type = "app";
+            program = toString (pkgs.writers.writeBash "testing" ''
+              ${pkgs.hugo}/bin/hugo server -D
+            '');
+          };
+
+          apps.release = {
+            type = "app";
+            program = toString (pkgs.writers.writeBash "release" ''
+              ./deploy.sh
+            '');
+          };
+
 
           defaultPackage = self.packages.${system}.website;
           devShell = pkgs.mkShell {
