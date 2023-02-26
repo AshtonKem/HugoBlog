@@ -7,7 +7,9 @@ Categories = []
 I recently read an [article](https://twi.github.io/blog/making-go-telemetry-opt-in-is-a-mistake.html) about Go opt in tracking being a mistake. The author was very earnest about the pros of compiler tool chain telemetry, how it was very common among Google and Go's competitors, and how opt in tracking would skew the data set. Their general argument was that anonymized telemetry is extremely useful for compiler writers, and that shifting Go to opt in rather than opt out doesn't harm user safety and reduces the ability of the Go team to correctly steer their important project
 
 Reading the article I was struck by a feeling of "I'm confused 
-why you're confused". The author made a ton of great points, but to me they missed the main problem completely. The issue never was telemetry, the issue was Google[^go]. Very few people trust Google anymore, and therefore the problem was that the telemetry suggestion came from Google. Focusing on the pros and potential safety rails of an open telemetry system is not wrong per se, it's just completely orthogonal to what got everyone worked up in the first place.
+why you're confused"[^confused]. The author made a ton of great points, but to me they missed the main problem completely. The issue never was telemetry, the issue was Google[^go]. Very few people trust Google anymore, and therefore the problem was that the telemetry suggestion came from Google. Focusing on the pros and potential safety rails of an open telemetry system is not wrong per se, it's just completely orthogonal to what got everyone worked up in the first place.
+
+[^confused]: I'm not actually certain if OP is confused. But this is the short hand phrase I say when some extrenal problem is immediately obvious to me, and I'm confused why someone else doesn't focus on same thing I do.
 
 [^go]: I believe that the official line is that Google doesn't own Go, it just happens to employ everyone who is on the core team. I find this unpersuasive.
 
