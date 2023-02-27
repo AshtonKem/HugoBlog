@@ -53,4 +53,4 @@ url = "/about/"
 
 [[params.nav.custom]]
 title = "Resume"
-url = "/resume/"
+url = "/resume.pdf"
