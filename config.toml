@@ -2,7 +2,6 @@ baseURL = "http://ashtonkemerling.com/"
 languageCode = "en-us"
 title = "Ashton Kemerling"
 theme = "hugo-notepadium"
-googleAnalytics = "UA-32325955-1"
 
 [params]
     author = "Ashton Kemerling"
@@ -36,11 +35,6 @@ googleAnalytics = "UA-32325955-1"
     icon = "fab fa-github"
     weight = 1
     url = "https://github.com/AshtonKem/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 3
-    url = "https://twitter.com/ashton/"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
