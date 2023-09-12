@@ -7,16 +7,17 @@
       url = github:cntrump/hugo-notepadium;
       flake = false;
     };
-    resume = {
+    resume-flake = {
       url = github:AshtonKem/resume;
-      flake = true;
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, resume, hugo-theme }:
+  outputs = { self, nixpkgs, flake-utils, resume-flake, hugo-theme }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {inherit system;};
+        resume = resume-flake.packages.${system}.default;
+
       in
         {
           packages.default = pkgs.stdenv.mkDerivation rec {
@@ -31,9 +32,9 @@
             configurePhase = installThemeScript;
             buildPhase = ''
               hugo
+              cp -r "${resume}/resume.pdf" public/assets/resume.pdf
             '';
             installPhase = ''
-              cp -r ${resume} public/resume
               cp -r public $out
             '';
           };
