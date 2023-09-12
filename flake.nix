@@ -7,20 +7,23 @@
       url = github:cntrump/hugo-notepadium;
       flake = false;
     };
-    resume.url = github:AshtonKem/resume;
+    resume = {
+      url = github:AshtonKem/resume;
+      flake = true;
+    };
   };
 
   outputs = { self, nixpkgs, flake-utils, resume, hugo-theme }:
     flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs {inherit system;};
       in
         {
-          packages.website = pkgs.stdenv.mkDerivation rec {
+          packages.default = pkgs.stdenv.mkDerivation rec {
             pname = "static-website";
             version = "2023-02-23";
             src = ./.;
-            buildInputs = [ pkgs.hugo hugo-theme];
+            buildInputs = [ pkgs.hugo hugo-theme resume ];
             installThemeScript = ''
               mkdir -p themes
               ln -snf "${hugo-theme}" themes/hugo-notepadium
@@ -30,6 +33,7 @@
               hugo
             '';
             installPhase = ''
+              cp -r ${resume} public/resume
               cp -r public $out
             '';
           };
@@ -50,8 +54,7 @@
           };
 
 
-          defaultPackage = self.packages.${system}.website;
-          devShell = pkgs.mkShell {
+          devShells.default = pkgs.mkShell {
             packages = with pkgs; [
               hugo
             ];
