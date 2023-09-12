@@ -81,7 +81,7 @@
         "type": "github"
       }
     },
-    "resume": {
+    "resume-flake": {
       "inputs": {
         "flake-utils": "flake-utils_2",
         "nixpkgs": "nixpkgs_2"
@@ -105,7 +105,7 @@
         "flake-utils": "flake-utils",
         "hugo-theme": "hugo-theme",
         "nixpkgs": "nixpkgs",
-        "resume": "resume"
+        "resume-flake": "resume-flake"
       }
     },
     "systems": {
