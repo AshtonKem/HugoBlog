@@ -31,8 +31,9 @@
             '';
             configurePhase = installThemeScript;
             buildPhase = ''
+              cp -rf "${resume}/resume.pdf" static/resume.pdf
               hugo
-              cp -r "${resume}/resume.pdf" public/assets/resume.pdf
+
             '';
             installPhase = ''
               cp -r public $out
