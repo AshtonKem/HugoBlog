@@ -87,11 +87,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1694492527,
-        "narHash": "sha256-FhKZXAxsO9eUn5nwf+Hl28cdBXvgrK6ip332+hNfus4=",
+        "lastModified": 1694494251,
+        "narHash": "sha256-lLPpOhsNJQvZMjdLigYS581sg9mrmYoisQaaiJYpDLU=",
         "owner": "AshtonKem",
         "repo": "resume",
-        "rev": "1d5aa302fbfd9a949595e8393d5053628722940a",
+        "rev": "be210c12ed5f9eb4c895afc83fd746c7405d3723",
         "type": "github"
       },
       "original": {
