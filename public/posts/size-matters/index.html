@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><meta name="description" content="About 6 months ago I started to look for a new language for hobby projects. I wanted something practical, yet fun. I managed to limit the criteria down to:
+
+Functional
+Good community
+Growing acceptance
+
+This automatically eliminates a lot common languages, like Python, Ruby, and Java. After my Common Lisp job, I knew that a sane compilation system/target were an absolute must, so I looked at Scala first. On the surface Scala seemed a real winner: growing fan base, increasing commercial adoption, functional, and targeting the JVM. But while trying out Scala I realized that I had missed a huge criteria: language size."><title>Size Matters&nbsp;&ndash;&nbsp;Ashton Kemerling</title><link rel="stylesheet" href="/css/core.min.952a6d39cb50fac3eaa9e4386dd02bf0c2457e47928bc76ee18de871a100fec5835856656a5dc80bd4fb6f951cc004f3.css" integrity="sha384-lSptOctQ&#43;sPqqeQ4bdAr8MJFfkeSi8du4Y3ocaEA/sWDWFZlal3IC9T7b5UcwATz"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Size Matters" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Ashton Kemerling</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">About</a><a class="nav item" href="/resume%2epdf">Resume</a></nav></div></span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Size Matters</h1><p class="article date">April 23, 2013</p></section><article class="article markdown-body"><p>About 6 months ago I started to look for a new language for hobby projects. I wanted something practical, yet fun. I managed to limit the criteria down to:</p>
+<ul>
+<li>Functional</li>
+<li>Good community</li>
+<li>Growing acceptance</li>
+</ul>
+<p>This automatically eliminates a lot common languages, like Python, Ruby, and Java. After my Common Lisp job, I knew that a sane compilation system/target were an absolute must, so I looked at Scala first. On the surface Scala seemed a real winner: growing fan base, increasing commercial adoption, functional, and targeting the JVM. But while trying out Scala I realized that I had missed a huge criteria: language size.</p>
+<p>There&rsquo;s only so much information that a programmer can keep in their mind at a time. Every programmer needs to split their internal memory in at least 4 different ways, if not more. There are language details to remember, library or API interfaces to recall, domain knowledge to retain, and possibly coordination or social issues to be concerned about. Once this internal memory is exceeded details end up being forgotten, and recalling forgotten information involves an expensive round trip to documentation, code, or the internet.</p>
+<p>There&rsquo;s no escaping the need to recall language details, at least until someone invents a syntax free programming languages; similarly it&rsquo;s near impossible to write an application of any size without relying on libraries or APIs. Domain knowledge is often expensive to acquire and beneficial to have. And social issues cannot be resolved by programming language choice alone.</p>
+<p>So the real question is, what are you going to skimp on? Are you going to pay the price of memory &ldquo;cache misses&rdquo;? Are you going to forget portions of your language, or certain libraries? Or are you going to segregate domain knowledge among the team so that everyone knows their bit only?</p>
+<p>The real world answer is probably a bit of each. But I contend that reduction of language features in memory is the least damaging of all the outcomes. I doubt it&rsquo;s controversial to say that domain knowledge should be shared widely among developers, and should be as much in memory as possible; programmers who understand what they&rsquo;re programming for tend to program better on average. Similarly it&rsquo;s hard to eliminate a decently written library: that functionality has to come from somewhere, and it&rsquo;ll either be an external library, an internal one, or duplicated code.</p>
+<p>But language reduction is an interesting idea. Programmers long ago got away with previous few features, yet managed some amazing things. Don&rsquo;t believe me? Consider how small the Scheme spec is compared to say, Java. It reduces the need for fancy and hard to learn IDEs, allows the programmer to get more done between looking up function or class definitions, and increases the speed with which an engineer can fully understand a piece of code.</p>
+<p>It was actually this feature that finally drove me away from Scala to Clojure. After a few hours of Scala work I was turned off by the size of the language, and got tired of saying &ldquo;Why did it do that?&rdquo; Clojure on the other hand is relatively small, only a dozen &ldquo;special forms&rdquo; which have to be hard coded into the language, and then a 3-4 dozen core functions. This means that I can both keep the entire language in memory, and retain a large amount of library and domain knowledge to get work done.</p>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/binding-vs-assignment/"><span class="iconfont icon-article"></span>Binding vs Assignment</a></p><p><a class="link" href="/posts/octopress/"><span class="iconfont icon-article"></span>Octopress</a></p></section></div></section><section id="footer"><div style="display: none;"><a rel="me" href="https://hachyderm.io/@Ashton">Mastodon</a></div><div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
+<p style="flex-shrink: 0;">Ashton Kemerling</p>
+<p><span>Powered by </span><a
+    href="https://gohugo.io" target="_blank">Hugo</a><span> and the </span><a
+    href="https://themes.gohugo.io/hugo-notepadium/" target="_blank">Notepadium</a></p>
+</div></section></body>
+
+</html>

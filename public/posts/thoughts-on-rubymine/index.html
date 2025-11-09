@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><meta name="description" content="As part of my new job at Pivotal Labs I&rsquo;ve been pair programming almost
+every day. The obvious challenge with pair programming, especially in a
+popular language like ruby, is in choosing what tools to work with. Vim,
+Emacs, RubyMine, TextMate, the choices are various and divisive.
+To make peace among the engineers, it makes sense to dictate one set of
+tools to make peace among all your employees, and to make provisioning
+the machines easier. Pivotal has decided to standardize on RubyMine with
+a dark color scheme and a few custom configurations."><title>Thoughts on Rubymine&nbsp;&ndash;&nbsp;Ashton Kemerling</title><link rel="stylesheet" href="/css/core.min.952a6d39cb50fac3eaa9e4386dd02bf0c2457e47928bc76ee18de871a100fec5835856656a5dc80bd4fb6f951cc004f3.css" integrity="sha384-lSptOctQ&#43;sPqqeQ4bdAr8MJFfkeSi8du4Y3ocaEA/sWDWFZlal3IC9T7b5UcwATz"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Thoughts on Rubymine" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Ashton Kemerling</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">About</a><a class="nav item" href="/resume%2epdf">Resume</a></nav></div></span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Thoughts on Rubymine</h1><p class="article date">December 20, 2013</p></section><article class="article markdown-body"><p>As part of my new job at Pivotal Labs I&rsquo;ve been pair programming almost
+every day. The obvious challenge with pair programming, especially in a
+popular language like ruby, is in choosing what tools to work with. Vim,
+Emacs, RubyMine, TextMate, the choices are various and divisive.</p>
+<p>To make peace among the engineers, it makes sense to dictate one set of
+tools to make peace among all your employees, and to make provisioning
+the machines easier. Pivotal has decided to standardize on RubyMine with
+a dark color scheme and a few custom configurations.</p>
+<h1 id="the-good">The Good</h1>
+<p>RubyMine, being set up for ruby in particular, works very well with
+navigating, indenting, and colorizing ruby code. With the exception of
+setting a variable as the result of an if expression, I have never seen
+RubyMine indent code incorrectly or get confused on coloration.</p>
+<p>It also does a decent job of navigating to ruby classes and functions,
+something that is quite hard since ruby lacks explicit import
+semantics. It definitely makes hunting down odd test harness functions
+down a breeze, and has saved me in the past. It also is good at
+identifying the view that cooresponds to a controller method, but due to
+the way that tracker is laid out, I haven&rsquo;t had a chance to use this
+feature often.</p>
+<p>And as the cherry on top RubyMine includes a &ldquo;Textmate like&rdquo; quick find
+feature. In large code bases this will save you about a minute trying to
+find a particular file, so ling as you have an idea of what it&rsquo;s called!</p>
+<h1 id="the-bad">The Bad</h1>
+<p>If you only have unique controllers and models, you will absolutely love
+the ability to jump to a class definition. Since we use a lot of
+similarly named controllers inside namespaces to control API versions,
+it often gets confused about what version I want. The quick find feature
+sometimes ignores the path if you provide it, which makes copying files
+from stacktraces occasionally unreliable.</p>
+<p>Javascript and less support is mediocre. No real complaints, but nothing
+to set it apart from other environments in my opinion. Maybe my
+colleagues who work on the front end would have a more nuanced opinion.</p>
+<p>Also sometimes with large files the coloring or error checking can lag
+behind. This usually kicks in at files longer than 3000 lines, which is
+not unusual for test files. For the most part this is just an annoyance
+which doesn&rsquo;t affect editing in any serious way.</p>
+<p>It has git integration, which lags behind the offerings from Emacs, Vim,
+and Eclipse in my opinion. I end up using the command line instead of
+the built in tools.</p>
+<h1 id="the-ugly">The Ugly</h1>
+<p>RubyMine is incredibly dim witted when it comes to parenthesis and
+quotes. If you wish to put an escaped quote at the end of a string,
+RubyMine will let you escape your ending quote, then insert a matching
+pair right afterwords when you try and fix the mistake! To add insult to
+injury, you must move the cursor before fixing the issue lest RubyMine
+delete both of the extra quotes. Very frustrating.</p>
+<p>RubyMine is also one of the most memory consuming programs I use. At
+least once a week it will grind my machine to a halt due to memory
+usage, which is impressive on a machine with 16G in memory.</p>
+<h1 id="conclusions">Conclusions </h1>
+<p>Out of the box, RubyMine works very well. I think it is a good
+compromise for large teams. But if you have time to learn some more
+complicated tools, I believe you would be way better off learning a more
+customizable editor like Emacs or Vim. It might take some effort, but
+these editors can do just as much as their commercial cousins and will
+continue to do well no matter what language you decide to use in the
+future.</p>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/internationalization-golf/"><span class="iconfont icon-article"></span>Internationalization Golf</a></p><p><a class="link" href="/posts/org-mode/"><span class="iconfont icon-article"></span>Org Mode</a></p></section></div></section><section id="footer"><div style="display: none;"><a rel="me" href="https://hachyderm.io/@Ashton">Mastodon</a></div><div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
+<p style="flex-shrink: 0;">Ashton Kemerling</p>
+<p><span>Powered by </span><a
+    href="https://gohugo.io" target="_blank">Hugo</a><span> and the </span><a
+    href="https://themes.gohugo.io/hugo-notepadium/" target="_blank">Notepadium</a></p>
+</div></section></body>
+
+</html>

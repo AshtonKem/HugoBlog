@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><meta name="description" content="Recently I&rsquo;ve taken interest in making myself more productive, and at
+least so far it&rsquo;s going well. I personally attribute part of my current
+productivity to a new &ldquo;shut up and get back to work&rdquo; mentality, and
+partly to a new (to me) organization system.
+The problem I&rsquo;ve had is that every single organization app is broken in
+some way. The only truly flexible system uses paper and pen, and I
+don&rsquo;t really want to deal with that."><title>Org Mode&nbsp;&ndash;&nbsp;Ashton Kemerling</title><link rel="stylesheet" href="/css/core.min.952a6d39cb50fac3eaa9e4386dd02bf0c2457e47928bc76ee18de871a100fec5835856656a5dc80bd4fb6f951cc004f3.css" integrity="sha384-lSptOctQ&#43;sPqqeQ4bdAr8MJFfkeSi8du4Y3ocaEA/sWDWFZlal3IC9T7b5UcwATz"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Org Mode" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Ashton Kemerling</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">About</a><a class="nav item" href="/resume%2epdf">Resume</a></nav></div></span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Org Mode</h1><p class="article date">November 4, 2013</p></section><article class="article markdown-body"><p>Recently I&rsquo;ve taken interest in making myself more productive, and at
+least so far it&rsquo;s going well. I personally attribute part of my current
+productivity to a new &ldquo;shut up and get back to work&rdquo; mentality, and
+partly to a new (to me) organization system.</p>
+<p>The problem I&rsquo;ve had is that every single organization app is broken in
+some way. The only truly flexible system uses paper and pen, and I
+don&rsquo;t really want to deal with that.</p>
+<p>The solution appears to be org-files. Think of them as a close cousin to
+Markdown, but for organization instead of HTML. The systems that use
+org-files support basically any kind of work flow imaginable because
+the storage mechanism is just text, so in the worst case scenario you
+can always just edit the file manually.</p>
+<p>Org-files are originally from the Emacs plugin org-mode, but there are
+now org-file readers for Vim, iPhone, and Android.</p>
+<h2 id="example-file">Example File.</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="okay-ashton-what-the-hell-is-that">Okay Ashton, What the Hell is That?</h2>
+<p>Let&rsquo;s break this down bit by bit. Any line starting with <!-- raw HTML omitted -->#+<!-- raw HTML omitted -->
+is used to tell the org-mode reader something. In this case it lets us
+know the last time we synced this to our mobile device, and the possible
+TODO states that an item can be in. It&rsquo;s not unusual to see formatting
+directives at the top of the file to control color, indentation, and
+similar settings. A lot of settings can either be set globally, or on a
+per-file basis.</p>
+<p>Next we have the individual headings. Each heading starts with a number
+of asterisks. The number of asterisks indicates the level. So
+<!-- raw HTML omitted -->** Wish List.<!-- raw HTML omitted --> is a child of <!-- raw HTML omitted -->*
+Butler<!-- raw HTML omitted -->. Most editors allow you to fold headings to show or hide
+their children, for convenience.</p>
+<p>Each heading can optionally have a TODO state, which is displayed in
+front of the heading title.. The default is one of blank, TODO,
+IN-PROGRESS, and DONE. A simple keystroke in most editors cycles from
+one state to the next. It&rsquo;s also possible to support multiple paths that
+a project can flow through. I personally use the default along with
+REFERENCE and ABANDONED, which allows for me to easily filter for
+abandoned projects, along with notes that aren&rsquo;t actionable yet.</p>
+<p>Org-mode supports 3 different kinds of time tracking and
+scheduling. Each heading can have up to one deadline entry, one
+scheduled entry, and multiple clock entries. Deadlines are for when an
+item should be finished, and scheduled is for when a project should be
+started. Clocks are for recording the amount of time used for an
+item. You can see an example of both the deadline and clock under the
+&ldquo;Better formatting.&rdquo;  header. Org-mode also supports a very flexible
+type of repeat scheduling.</p>
+<p>With any good organization system you&rsquo;ll need the ability to tag and
+filter items. Org provides two ways to do this, properties and
+tags. Tags are generally shared across multiple entries, with values
+like &ldquo;work&rdquo; and &ldquo;home&rdquo;. They are displayed on the far right of the
+tagged line, such as &ldquo;:projects:&rdquo; on the Butler line above. You can tag
+a line with as many tags as you want.</p>
+<p>Unlike tags, properties are composed of keys and values, many of which
+are unique to a specific entry. If you use any kind of syncing system,
+each item will get an ID property used to enforce uniqueness. A lot of
+systems will also respect the LOCATION property if you sync to a system
+that understands this, such as iCal.</p>
+<p>And finally you can have notes and text underneath each entry. Most
+org-mode readers understand free text, unordered lists (<!-- raw HTML omitted -->-<!-- raw HTML omitted -->
+or <!-- raw HTML omitted -->+<!-- raw HTML omitted -->), numbered lists, and check boxes (<!-- raw HTML omitted -->- [ ]<!-- raw HTML omitted -->
+and <!-- raw HTML omitted -->- [X]<!-- raw HTML omitted -->). Many of these can be easily manipulated with
+simple keyboard macros, such as the check boxes.</p>
+<p>As you can see, org-mode basically provides a super set of all the
+organizational features available. It&rsquo;s up to you how you wish to nest
+these, mark them due, and prioritize. That&rsquo;s why I love it, I&rsquo;m not
+locked into one particular layout that may or may not fit me, instead I
+can slowly evolve it as my systems mature. Expect more posts in the
+future about Emacs specific configuration settings to make org-mode
+easier to use.</p>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/thoughts-on-rubymine/"><span class="iconfont icon-article"></span>Thoughts on Rubymine</a></p><p><a class="link" href="/posts/the-best-of-lisp/"><span class="iconfont icon-article"></span>The Best of Lisp</a></p></section></div></section><section id="footer"><div style="display: none;"><a rel="me" href="https://hachyderm.io/@Ashton">Mastodon</a></div><div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
+<p style="flex-shrink: 0;">Ashton Kemerling</p>
+<p><span>Powered by </span><a
+    href="https://gohugo.io" target="_blank">Hugo</a><span> and the </span><a
+    href="https://themes.gohugo.io/hugo-notepadium/" target="_blank">Notepadium</a></p>
+</div></section></body>
+
+</html>

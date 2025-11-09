@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.152.2"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><meta name="description" content="No programming language stands alone. Besides the compiler, every
+programming language includes an ecosystem of libraries, build tools,
+analyzers, debuggers, and other utilities. Languages often rise and fall
+depending on the quality of these tools and libraries.
+For every language there needs to be one central item upon which every
+other tool depends. In most languages, this is the compiler or
+interpreter. Your Rails project is entirely dependent on the version of
+Ruby provided by the current environment, and similarly Maven depends on
+the version of javac and java available on the path."><title>The Primacy of the Build Tool&nbsp;&ndash;&nbsp;Ashton Kemerling</title><link rel="stylesheet" href="/css/core.min.952a6d39cb50fac3eaa9e4386dd02bf0c2457e47928bc76ee18de871a100fec5835856656a5dc80bd4fb6f951cc004f3.css" integrity="sha384-lSptOctQ&#43;sPqqeQ4bdAr8MJFfkeSi8du4Y3ocaEA/sWDWFZlal3IC9T7b5UcwATz"><meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="The Primacy of the Build Tool" /><body><section id="header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><span class="site name">Ashton Kemerling</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/about/">About</a><a class="nav item" href="/resume%2epdf">Resume</a></nav></div></span></div></section><section id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">The Primacy of the Build Tool</h1><p class="article date">March 31, 2014</p></section><article class="article markdown-body"><p>No programming language stands alone. Besides the compiler, every
+programming language includes an ecosystem of libraries, build tools,
+analyzers, debuggers, and other utilities. Languages often rise and fall
+depending on the quality of these tools and libraries.</p>
+<p>For every language there needs to be one central item upon which every
+other tool depends. In most languages, this is the compiler or
+interpreter. Your Rails project is entirely dependent on the version of
+Ruby provided by the current environment, and similarly Maven depends on
+the version of javac and java available on the path.</p>
+<p>Unfortunately, this makes our code more fragile and dependent on the
+machine it was first created on. Someone cloning your code from a
+different machine must take care to ensure that their development
+environment is close to the original authors, and deployment must ship
+the correct compilers and interpeters for production to work well. We
+have created tools to help enforce the requirements of the code, but
+they are fragile and make upgrading dependencies a pain, as anyone who
+has had to fight with RVM can attest.</p>
+<p>The one exception to this I have found is Clojure. Clojure inverts the
+normal order making the build tool the central item, with the compiler
+provided by the project definition file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span>(<span style="color:#66d9ef">defproject </span>foo <span style="color:#e6db74">&#34;0.1.0-SNAPSHOT&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">:description</span> <span style="color:#e6db74">&#34;FIXME: write description&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">:url</span> <span style="color:#e6db74">&#34;http://example.com/FIXME&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">:license</span> {<span style="color:#e6db74">:name</span> <span style="color:#e6db74">&#34;All Rights Reserved.&#34;</span>}
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">:dependencies</span> [[org.clojure/clojure <span style="color:#e6db74">&#34;1.5.1&#34;</span>]
+</span></span><span style="display:flex;"><span>                 [org.clojure/clojure-contrib <span style="color:#e6db74">&#34;1.2.0&#34;</span>]
+</span></span><span style="display:flex;"><span>                 [clj-time <span style="color:#e6db74">&#34;0.6.0&#34;</span>]]
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">:profiles</span> {<span style="color:#e6db74">:dev</span> {<span style="color:#e6db74">:dependencies</span> [[midje <span style="color:#e6db74">&#34;1.5.1&#34;</span>]]}})</span></span></code></pre></div>
+<p>The beauty of this change is that it makes setup trivial for another
+developer. All they need is the same build tool, and it will deal with
+the correct versions of both the compiler and any libraries for the
+project. Have other projects that depend on different versions of the
+compiler? The build tool only cares about the dependencies in front of
+it, and will call the correct version from the correct project.</p>
+<p>This also makes upgrading trivial. Want to try Clojure 1.6.0? Change
+&ldquo;1.5.1&rdquo; to &ldquo;1.6.0&rdquo; in the above snippet. Want to write a library that
+supports multiple versions of the compiler? The build tool supports
+profiles which allow you to swap out compilers trivially because it&rsquo;s
+just a dependency.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-clojure" data-lang="clojure"><span style="display:flex;"><span><span style="color:#e6db74">:profiles</span> {<span style="color:#e6db74">:1.3</span> {<span style="color:#e6db74">:dependencies</span> [[org.clojure/clojure <span style="color:#e6db74">&#34;1.3.0&#34;</span>]]}
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">:1.4</span> {<span style="color:#e6db74">:dependencies</span> [[org.clojure/clojure <span style="color:#e6db74">&#34;1.4.0-beta1&#34;</span>]]}}</span></span></code></pre></div>
+<p>Deployment gets easier as well. If you&rsquo;re deploying an uberjar, the core
+libraries you tested against are also shipped to production in the same
+jar. No need to upgrade your deployment scripts when a new version of
+Clojure comes out, as everything is included automatically.</p>
+<p>There is one catch to this wonderfulness, which is that Clojure depends
+on the JVM, and the build tool cannot change the JVM around. But Clojure
+has very simple requirements, Java 1.6 or greater, which
+makes it simple to deploy anywhere.</p>
+</article>
+</div>
+<div class="article bottom"><section class="article navigation"><p><a class="link" href="/posts/unusual-productivity-hacks/"><span class="iconfont icon-article"></span>Unusual Productivity Hacks</a></p><p><a class="link" href="/posts/managing-is-a-craft-too/"><span class="iconfont icon-article"></span>Managing is a Craft Too</a></p></section></div></section><section id="footer"><div style="display: none;"><a rel="me" href="https://hachyderm.io/@Ashton">Mastodon</a></div><div style="display:flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between;">
+<p style="flex-shrink: 0;">Ashton Kemerling</p>
+<p><span>Powered by </span><a
+    href="https://gohugo.io" target="_blank">Hugo</a><span> and the </span><a
+    href="https://themes.gohugo.io/hugo-notepadium/" target="_blank">Notepadium</a></p>
+</div></section></body>
+
+</html>
