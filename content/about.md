@@ -1,7 +1,7 @@
 ---
 title: "About"
 slug: "about"
-date: 2019-03-09T13:43:13-08:00
+date: 2026-11-09T13:43:13-08:00
 draft: false
 ---
 
