@@ -4,7 +4,6 @@ title = "Ashton Kemerling"
 theme = "hugo-notepadium"
 
 [params]
-    author = "Ashton Kemerling"
     description = "Ashton Kemerling's personal website"
     keywords = "blog,developer,personal"
     info = "Developer, manager, all around decent guy."
@@ -26,6 +25,10 @@ theme = "hugo-notepadium"
 
     # Custom CSS
     custom_css = []
+
+[params.author]
+    name = "Ashton Kemerling"
+    email = ""
 
 [taxonomies]
   series = "series"
